@@ -18,7 +18,7 @@ public class CerradurasDeKleenController {
         return ResponseEntity.ok(res);
     }
 
-    // Endpoint para "positiva" (Cerradura Positiva)
+    
     @PutMapping("/positiva/{n}")
     public ResponseEntity<List<String>> cerrPos(@PathVariable int n) {
         List<String> res = cerraduraService.cerrPos(n);
